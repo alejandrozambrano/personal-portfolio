@@ -65,6 +65,95 @@ body {
 
 /**-Responsive desing navbar-**/
 
+@media screen and (max-width: 1200px) {
+    .navbar {
+        padding: 0 2rem;
+    }
+    .navbar .checkbox {
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 32px;
+        top:2rem;
+        right: 2rem;
+        z-index: 2;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .navbar .hamburger__lines {
+        display: block;
+        height:  26px;
+        width: 32px;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navbar .hamburger__lines .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #ffffff;
+    }
+    .navbar .hamburger__lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transforms 0.4s ease-in-out;
+    }
+    .navbar .hamburger__lines .line2 {
+        transition: transforms 0.2s ease-in-out;
+    }
+    .navbar .hamburger__lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transforms 0.4s ease-in-out;
+    }
+
+    .header__info ul li {
+        padding: 0;
+        margin: 2rem 0;
+        cursor: pointer;
+        font-size: x-large;
+    }
+
+    .header__info ul li:hover {
+        background-color: unset;
+    }
+
+    .header__info {
+        padding-top:120px;
+        height: 100vh;
+        background: var(--secondary-bg-color);
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        overflow: auto;
+        transform: translate(150%);
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .navbar input[type="checkbox"]:checked ~ .header__info{
+        transform: translate(0);
+    }
+
+    .navbar input[type="checkbox"]:checked ~ .hamburger__lines .line1{
+        transform: rotate(45deg);
+    }
+    .navbar input[type="checkbox"]:checked ~ .hamburger__lines .line2{
+        transform: scaleY(0);
+    }
+    .navbar input[type="checkbox"]:checked ~ .hamburger__lines .line3{
+        transform: rotate(-45deg);
+    }
+}
+
 /*------------HOME-----------*/
 
 /*------------ABOUT ME-----------*/
