@@ -41,6 +41,12 @@ logo img {
     margin-top: 1rem;
 }
 
+.header__info ul li {
+    padding: 2.5rem 1.2rem 1rem 1rem 1.2rem;
+    cursor: pointer;
+}
+
+
 /**-Responsive desing navbar-**/
 
 /*------------HOME-----------*/
