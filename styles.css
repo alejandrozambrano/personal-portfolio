@@ -46,6 +46,16 @@ logo img {
     cursor: pointer;
 }
 
+.hireMe__button a {
+    background-color: var(--secondary-bg-color);
+    color: var(--font-color);
+    font-family: var(--font);
+    font-size: small;
+    padding: 1rem 1.5rem;
+    border-color: unset;
+    border-width: 0;
+}
+
 
 /**-Responsive desing navbar-**/
 
