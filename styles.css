@@ -8,7 +8,7 @@
     --bg-color: #000;
     --font-color: #fff;
     --secondary-bg-color:#ff4900;
-    --font: "Pappins";
+    --font: "Poppins";
 }
 body {
     background-color: var(--bg-color);
@@ -164,6 +164,70 @@ body {
 }
 
 /*------------HOME-----------*/
+
+.right__content img {
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+}
+.home__page {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.message__bubble{
+    display: inline-block;
+    position: relative;
+    width: 180px;
+    height: auto;
+    background-color: var(--secondary-bg-color);
+}
+
+.triangle:after {
+    content: '';
+    position: absolute;
+    left: 40%;
+    border: 15px solid;
+    border-color: var(--secondary-bg-color) transparent transparent transparent;
+}
+
+.message__text{
+    padding: 1rem;
+}
+.home__buttons button {
+    padding: 1rem 2rem;
+    color: var(--font-color);
+}
+.home__buttons a {
+   background-color: var(--secondary-bg-color);
+   font-size: 0.9rem;
+   color: #fff;
+   padding: 1rem 1.5rem; 
+}
+.home__buttons button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-width: thin;
+    font-family: var(--font);
+    font-size: 0.9rem;
+    color: #fff;
+    padding: 1rem 1.5rem;
+}
+
+@media screen and (max-width: 576px){
+    .message__bubble {
+        width: 160px;
+    }
+    .home__buttons a {
+        padding: 1rem 1rem !important;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .home__page {
+        padding-top: 10rem;
+    }
+}
 
 /*------------ABOUT ME-----------*/
 
