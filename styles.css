@@ -25,6 +25,9 @@ body {
     .container {
         padding: 0 2rem;
     }
+    .about__me {
+        padding: 0 2rem;
+    }
 }
 
 
@@ -230,6 +233,56 @@ body {
 }
 
 /*------------ABOUT ME-----------*/
+
+/*.about__me {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}*/
+/*
+.about__me {
+    padding: 0 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}*/
+
+
+.about__me .image img {
+    height: 100%;
+    width: 100%;
+    filter: grayscale(1);
+    object-fit: cover;
+}
+
+.progress__bar {
+    width: 100%;
+    height: 0.2rem;
+    position: relative;
+    background-color: #707070;
+}
+
+.progress__bar span {
+    height: 100%;
+    position: absolute;
+}
+.progress__wordpress span {
+    background-color: #ff4900;
+    width: 100%;
+}
+.progress__html span {
+    background-color: #ff7004;
+    width: 75%;
+}
+.progress__angular span {
+    background-color: #ff9809;
+    width: 80%;
+}
+.progress__reactJs span {
+    background-color: #ff9809;
+    width: 95%;
+}
 
 /*------------SERVICES-----------*/
 
