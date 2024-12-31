@@ -285,10 +285,47 @@ body {
 }
 
 /*------------SERVICES-----------*/
+.services {
+    padding-top: 81px;
+}
+.card {
+    background-color: #111111;
+    transition: all 0.2s ease-in;
+}
+.service__logo {
+    height: 60px;
+    width: 60px;
+    background-color: #000;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.service__logo i {
+    font-size: x-large;
+    transition: all 0.2s ease-in;
+}
+
+.card:hover {
+    background-color: var(--secondary-bg-color);
+}
+.card:hover .service__logo {
+    background-color: #fff;
+}
+.card:hover .service__logo i {
+    color: #000;
+}
 
 /*------------PORTAFOLIO-----------*/
 
 /*------------FREE LANCER-----------*/
+
+.freelancer {
+    height: 50vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.9 ), rgba(0, 0, 0, 0.9)) ,url(./img/freelance.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 /*------------FOOTER-----------*/
 
