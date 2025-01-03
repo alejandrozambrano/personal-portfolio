@@ -373,7 +373,7 @@ body {
 }
 
 .project__card .fa-arrow-right-long {
-    margin-top: small;
+    margin-top: 1rem;
     cursor: pointer;
 }
 
@@ -388,7 +388,7 @@ body {
     opacity: 1;
 }
 
-.project__card .hide {
+.project__card.hide {
     display: none;
 }
 
