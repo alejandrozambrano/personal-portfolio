@@ -342,7 +342,7 @@ body {
 
 .project__card .overlay {
     background: rgb(255, 73, 0, 0.9);
-    blackdrop-filter: blur(2.7px);
+    backdrop-filter: blur(2.7px);
     -webkit-backdrop-filter: blur(2.7px);
     position: absolute;
     height: 100%;
@@ -351,13 +351,59 @@ body {
     top: 0;
     bottom: 0;
     right: 0;
-    opacity: 1;
-    -webkit-transform: all 0.4s ease-in-out;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
 
+.project__card .project__info {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    pointer-events: none;
+    transform: all 0.3s ease-in-out 0s;
+}
 
+.project__card .project__info p {
+    font-size: small;
+    margin-top: 2rem;
+}
+
+.project__card .fa-arrow-right-long {
+    margin-top: small;
+    cursor: pointer;
+}
+
+.project__card:hover .project__info {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.project__card:hover .overlay {
+    opacity: 1;
+}
+
+.project__card .hide {
+    display: none;
+}
+
+.project__card.show {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    
 }
 
 
