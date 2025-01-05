@@ -15,7 +15,7 @@
     <!--HEADER-->
     <header class="flex w-full fixed top-0 z-1">
         <nav class="flex justify-content-between w-full navbar">
-            <span class="logo cursor-pointer">
+            <span class="logo cursor-pointer"onclick="scrollToSection('home')">
                 <img src="./img/" alt="logo portafolio" width="50" height="50">
             </span>
             <input type="checkbox" aria-laber="Checkbox para mostrar y quitar hamburger menu" class="checkbox xl:hidden">
@@ -63,7 +63,7 @@
                         aria-label="Descargar curriculum"
                         class="cursor-pointer border-round-lg no-underline"
                             download>Descargar CV</a>
-                        <button aria-label="Deslizar a la seccion portafolio para mostrar mis trabajos"
+                        <button onclick="scrollToSection('portafolio')" aria-label="Deslizar a la seccion portafolio para mostrar mis trabajos"
                                 class="cursor-pointer border-round-lg">Mi trabajo</button>                  
                     </div>
             </div>    
